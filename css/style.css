@@ -61,7 +61,7 @@ table {
 }
 
 
-.nav-bar {
+.nav-bar {                                           /* Navigation bar of the template */
     background: #353541 repeat-y;
 }
 
@@ -76,15 +76,22 @@ table {
     padding: 22px 0 22px 11.11%;
 }
 
+.nav-bar-list-items:hover {
+    background-color: #204d74;
+}
+
+.nav-bar-list-items:active {
+    transform: translate(1px,2px);
+}
+
 .nav-bar-list-items .items-link {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: white;
-    width: 370px;
-
+    text-decoration: none;
 }
 
 .left-column-bottom {
-    background: #353541 repeat-y; 
+    background: #353541 repeat-y;
 }
