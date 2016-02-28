@@ -222,7 +222,7 @@ a.banner-button-link:hover {
 }
 
 
-.portfolio-project-1 {
+.portfolio-project-1 {                                          /* Top-left portfolio project */
     margin-top: 22%;
 }
 
@@ -230,7 +230,48 @@ a.banner-button-link:hover {
     background-color: #01b9c3;
 }
 
-.caption-header {
+
+.portfolio-project-2 {                                     /* Middle-left portfolio project */
+    margin-top: 6.5%;
+}
+
+.project-2-caption {
+    background-color: #3f3d3e;
+}
+
+.portfolio-project-3 {                                    /* Bottom-left portfolio project */
+    margin-top: 6.5%;
+}
+
+.project-3-caption {
+    background-color: #353541;
+}
+
+.portfolio-project-4 {                                   /* Top-right portfolio project */
+    margin-top: 22%;
+}
+
+.project-4-caption {
+    background-color: #1e2e3e;
+}
+
+.portfolio-project-5 {                                  /* Middle-right portfolio project */
+    margin-top: 6.5%;
+}
+
+.project-5-caption {
+    background-color: #0093b5;
+}
+
+.portfolio-project-6 {                                  /* Bottom-right portfolio project */
+    margin-top: 6.5%;
+}
+
+.project-6-caption {
+    background-color: #6176ab;
+}
+
+.caption-header {                                             /* Header for ALL portfolio projects */
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -238,7 +279,7 @@ a.banner-button-link:hover {
     padding: 3% 0 0 4.5%;
 }
 
-.caption-text {
+.caption-text {                                              /* Caption for ALL portfolio projects */
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -247,42 +288,83 @@ a.banner-button-link:hover {
 
 }
 
-.portfolio-project-2 {
-    margin-top: 22%;
+.caption-button-link:hover {                                  /* Button for ALL portfolio projects */
+    text-decoration: none;
 }
 
-.project-2-caption {
-    background-color: #3f3d3e;
+.caption-button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 6% 0 3% 4%;
+    padding-bottom: 1.5%;
 }
 
-.portfolio-project-3 {
-    margin-top: 22%;
+.caption-button:active {
+    transform: translate(1px,2px);
 }
 
-.project-3-caption {
-    background-color: #353541;
+.button-label {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
-.portfolio-project-4 {
-    margin-top: 22%;
+.portfolio-content .glyphicon {
+    color: white;
 }
 
-.project-4-caption {
-    background-color: #1e2e3e;
+
+
+.col-md-3 {                                                    /* Message form of the template */
+    padding-left: 0;
 }
 
-.portfolio-project-5 {
-    margin-top: 22%;
+.message-form {
+    margin-top: 30%;
+    margin-left: 0;
 }
 
-.project-5-caption {
-    background-color: #0093b5;
+
+.form-header {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #3e3e3e;
+    margin-bottom: 9%;
 }
 
-.portfolio-project-6 {
-    margin-top: 22%;
+.message-form .form-control {
+    border: 1px solid #3e3e3e;
+    border-radius: 0;
+    margin-bottom: 7%;
+    color: #656565;
+    font-style: italic;
 }
 
-.project-6-caption {
-    background-color: #6176ab;
+.form-button {
+    background-color: #fb6470;
+    border: none;
+    padding: 3% 5%;
+    margin-left: 68%;
+}
+
+.form-button:active {
+    transform: translate(1px,2px);
+}
+
+.form-button-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.form-button-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.contact {                                                /* Contact section of the template */
+    margin-top: 30%;
 }
