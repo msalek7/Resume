@@ -36,6 +36,9 @@ table {
 /*CSS reset-END!!!*/
 
 
+/*--------PROFILE AND NAVIGATION BAR---------*/
+
+
 .profile {                                                                 /* Profile section of the template */
     position: relative;
 }
@@ -116,6 +119,7 @@ table {
 /* Removing spaces between major sides (3 columns, 9 columns) of the grid */
 
 
+/*-------BANNER-------- */
 
 .img-responsive {                                                          /* image of the banner */
     position: relative;
@@ -172,7 +176,7 @@ a.banner-button-link:hover {
 }
 
 
-
+/* --------PORTFOLIO (main content)--------- */
 
 .portfolio-title {                                                       /* Header of the Portfolio*/
     font-family: 'Raleway', sans-serif;
@@ -310,10 +314,11 @@ a.banner-button-link:hover {
     font-weight: 500;
 }
 
-.portfolio-content .glyphicon {
+.portfolio-content .caption-button-link .glyphicon {
     color: white;
 }
 
+/*----------FORM AND CONTACTS------------- */
 
 
 .col-md-3 {                                                    /* Message form of the template */
@@ -346,7 +351,7 @@ a.banner-button-link:hover {
     background-color: #fb6470;
     border: none;
     padding: 3% 5%;
-    margin-left: 68%;
+    margin-left: 71%;
 }
 
 .form-button:active {
@@ -367,4 +372,117 @@ a.banner-button-link:hover {
 
 .contact {                                                /* Contact section of the template */
     margin-top: 30%;
+}
+
+.contact .glyphicon-home, .glyphicon-send {                       /* Icons for the Contact */
+    transform: scale(2);
+}
+
+.contact .glyphicon-earphone {
+    transform: scale(2) rotate(90deg);
+}
+
+.contact span {                                         /* margin for Contact's Icons */
+    margin-left: 64%;
+}
+
+.contact span:nth-of-type(1n+2) {
+    margin-top: 77px;
+}
+
+
+.contact .contact-method {                              /* Methods for Contact */
+    margin: -5% 0 0 15%;
+}
+
+.contact .contact-method:nth-of-type(1n+2) {           /* margin for Contact's methods */
+    margin-top: 14%;
+}
+
+.contact-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #3e3e3e;
+}
+
+.contact-details {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #8b8b8b;
+    margin-top: 5%;
+}
+
+/*-------FOOTER--------*/
+
+
+.footer {
+    margin-top: 9%;
+}
+
+.footer-icons {                                            /* Icons for footer */
+    margin: 0 auto;
+    width: 15%;
+    list-style-type: none;
+}
+
+.footer-icons li {
+    display: inline-block;
+}
+
+.footer-icons .icon-1 {                                    /* Twitter icon settings */
+    height: 32px;
+    width: 37px;
+    background: url('../image/8-social-icons-sprites.jpg') no-repeat -56px -182px;
+}
+
+.footer-icons .icon-1:hover {
+    background-position: -56px -148px;
+}
+
+.footer-icons .icon-2 {                                    /* Skype icon settings */
+    height: 32px;
+    width: 37px;
+    background: url('../image/8-social-icons-sprites.jpg') no-repeat -511px -360px;
+    border-right: 1px solid #a3a3a3;
+    border-left: 1px solid #a3a3a3;
+}
+
+.footer-icons .icon-2:hover {
+    background-position: -511px -326px;
+}
+
+.footer-icons .icon-3 {                                    /* Dribbble icon settings */
+    height: 32px;
+    width: 37px;
+    background: url('../image/8-social-icons-sprites.jpg') no-repeat -133px -182px;
+}
+
+.footer-icons .icon-3:hover {
+    background-position: -133px -148px;
+}
+
+.icon-link {                                              /* Hiding links of icons */
+    color: transparent;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: transparent;
+}
+
+.icon-link:active {
+    color: transparent;
+}
+
+.footer-copyright {                                      /* Copyright notice of Footer */
+    width: 32%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #8b8b8b;
 }

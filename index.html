@@ -9,13 +9,11 @@
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway:500,600' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <div class="col-md-3 hidden">                                 <!-- 3 left columns part of the template -->
+            <div class="col-md-3 hidden">                                      <!-- 3 major left columns of the template-->
                 <div class="profile">                                                 <!-- Profile section-->
                     <img class="img-responsive" src="image/profile-image.png"/>
                     <label class="profile-name">Al Rayhan</label>
@@ -34,7 +32,7 @@
                 </div>
                 <div class="left-column-bottom"></div>                          <!--lower part of the left columns-->
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9">                                         <!-- 9 major right columns of the template-->
                 <div class="banner">                                                    <!-- Banner -->
                     <img class="img-responsive" src="image/banner-background.png"/>
                     <h1 class="banner-title">Lets Make Something Great</h1>
@@ -45,16 +43,16 @@
                         <a class="banner-button-link">Hire Me!</a>
                     </button>
                 </div>
-                <article class="portfolio-content">
+                <article class="portfolio-content">                               <!--Portfolio -->
                     <div class="col-md-11 col-md-offset-1">
                         <h2 class="portfolio-title">Portfolio</h2>
-                        <ul class="portfolio-tabs">
+                        <ul class="portfolio-tabs">                            <!-- Portfolio Tabs-->
                             <li role="presentation" class="tabs-items active"><a class="tabs-link" href="">Branding</a></li>
                             <li role="presentation" class="tabs-items"><a class="tabs-link" href="">Web Design</a></li>
                             <li role="presentation" class="tabs-items"><a class="tabs-link" href="">Animation</a></li>
                             <li role="presentation" class="tabs-items"><a class="tabs-link" href="">UI/UX</a></li>
                         </ul>
-                        <div class="col-md-6">
+                        <div class="col-md-6">                               <!-- Left half (6 columns) of Portfolio -->
                             <section class="portfolio-project-1">
                                 <img class="img-responsive" src="image/project-1.png"/>
                                 <div class="project-1-caption">
@@ -95,7 +93,7 @@
                                 </div>
                             </section>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6">                               <!-- Right half (6 columns) of Portfolio -->
                             <section class="portfolio-project-4">
                                 <img class="img-responsive" src="image/project-2.png"/>
                                 <div class="project-4-caption">
@@ -136,41 +134,63 @@
                                 </div>
                             </section>
                         </div>
-                    </div>
-                    </div>
-                </article>
-                <div class="row">
-                    <div class="col-md-11 col-md-offset-1">
-                        <div class="col-md-3">
-                            <form class="message-form">
-                                <h3 class="form-header">Leave a Message</h3>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Name*">
+                        <div class="row">                                                  <!-- Form section (message) -->
+                                <div class="col-md-5">
+                                    <form class="message-form">
+                                        <h3 class="form-header">Leave a Message</h3>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Name*">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*">
+                                        </div>
+                                        <textarea class="form-control" rows="3" placeholder="Message*"></textarea>
+                                        <button class="form-button"><a class="form-button-link" href="">Hire Me!</a></button>
+                                    </form>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*">
+                                <div class="col-md-6 col-md-offset-1">
+                                    <section class="contact">                                 <!-- Contact section -->
+                                        <div class="col-md-1 col-sm-3 col-xs-3">
+                                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                        </div>
+                                        <div class="col-md-11 col-sm-9 col-xs-9">
+                                            <div class="contact-method">
+                                                <h4 class="contact-header">Location</h4>
+                                                <p class="contact-details">324, Golden Tower, Amborkhana, Sylhet</p>
+                                            </div>
+                                            <div class="contact-method">
+                                                <h4 class="contact-header">Email</h4>
+                                                <p class="contact-details">junaed@deviserweb.com</p>
+                                            </div>
+                                            <div class="contact-method">
+                                                <h4 class="contact-header">Toll Free Call</h4>
+                                                <p class="contact-details">0800 234 6578</p>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
-                                <textarea class="form-control" rows="3" placeholder="Message*"></textarea>
-                                <button class="form-button"><a class="form-button-link" href="">Hire Me!</a></button>
-                            </form>
-                        </div>
-                        <div class="col-md-4 col-md-offset-1">
-                            <section class="contact"></section>
-                            <div class="col-md-2">
-                                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                                <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-                                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <footer class="footer">                                            <!-- Footer -->
+                                    <ul class="footer-icons">                                   <!-- Icons for Footer -->
+                                        <li class="icon-1"><a class="icon-link" href="https://twitter.com/?lang=en">.......</a></li>
+                                        <li class="icon-2"><a class="icon-link" href="http://www.skype.com/en/">.......</a></li>
+                                        <li class="icon-3"><a class="icon-link" href="https://dribbble.com/">.......</a></li>
+                                    </ul>
+                                    <p class="footer-copyright">                          <!-- Copyright notice for Footer -->
+                                        Copyright:Junaed Ahmed, All rights reserved
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                </article>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 </body>
 </html>
