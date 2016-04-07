@@ -227,7 +227,7 @@ a.banner-button-link:hover {
 
 
 .portfolio-project-1 {                                          /* Top-left portfolio project */
-    margin-top: 22%;
+    margin-top: 6.5%;
 }
 
 .project-1-caption {
@@ -252,7 +252,7 @@ a.banner-button-link:hover {
 }
 
 .portfolio-project-4 {                                   /* Top-right portfolio project */
-    margin-top: 22%;
+    margin-top: 6.5%;
 }
 
 .project-4-caption {
@@ -477,7 +477,7 @@ a.banner-button-link:hover {
 }
 
 .footer-copyright {                                      /* Copyright notice of Footer */
-    width: 32%;
+    width: 26%;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 5%;
