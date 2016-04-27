@@ -39,6 +39,14 @@ table {
 /*--------PROFILE AND NAVIGATION BAR---------*/
 
 
+
+.col-md-3 {
+    max-width: 300px;
+    position: fixed;
+    left: 0;
+}
+
+
 .profile {                                                                 /* Profile section of the template */
     position: relative;
 }
@@ -100,10 +108,15 @@ table {
     text-decoration: none;
 }
 
+/*
 .left-column-bottom {
-    background: #353541 repeat-y;
+    background-color: #1e2e3e;
+    background-size: auto;
+    background-repeat: repeat-y;
+    height: 100%;
 }
 
+*/
 
 /* Removing spaces between major sides (3 columns, 9 columns) of the grid
 
@@ -117,6 +130,15 @@ table {
 
 
 /* Removing spaces between major sides (3 columns, 9 columns) of the grid */
+
+
+
+
+.col-md-9 {
+    max-width: 950px;                                                     /* width for main body of the template...disabling float is needed for centering */
+    float: none;
+}
+
 
 
 /*-------BANNER-------- */
