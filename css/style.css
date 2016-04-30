@@ -40,15 +40,11 @@ table {
 
 
 
-.col-md-3 {
-    max-width: 300px;
-    position: fixed;
-    left: 0;
-}
+.col-md-3 {                                                                 /* 3 column skeleton of Navbar */
+    height: 100%;
+    background-color: #353541;
+    position: absolute;            /*Using Absolute positioning to make height working */
 
-
-.profile {                                                                 /* Profile section of the template */
-    position: relative;
 }
 
 .img-responsive {
@@ -78,7 +74,7 @@ table {
 
 
 .nav-bar {                                                               /* NAVIGATION BAR of the template */
-    background: #353541 repeat-y;
+    background-color: #353541;
 }
 
 
@@ -118,7 +114,7 @@ table {
 
 */
 
-/* Removing spaces between major sides (3 columns, 9 columns) of the grid
+/* Removing spaces between major sides (3 columns, 9 columns) of the grid */
 
 .col-sm-3, .col-md-3 {
     padding-right: 0;
@@ -383,7 +379,7 @@ a.banner-button-link:hover {
 .form-button-link {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
 }
 
@@ -499,7 +495,7 @@ a.banner-button-link:hover {
 }
 
 .footer-copyright {                                      /* Copyright notice of Footer */
-    width: 26%;
+    width: 30%;
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 5%;
@@ -507,4 +503,15 @@ a.banner-button-link:hover {
     font-weight: 500;
     font-size: 13px;
     color: #8b8b8b;
+}
+
+
+/* ------ Extra STYLES for screen widths less than 992 px ------ */
+
+
+@media (max-width: 992px) {
+
+    .col-md-3 {
+        position: static;             /* Making positioning of Navbar column back to normal, for height purposes*/
+    }
 }
