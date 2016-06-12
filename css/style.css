@@ -36,16 +36,29 @@ table {
 /*CSS reset-END!!!*/
 
 
-/*--------PROFILE AND NAVIGATION BAR---------*/
+/*--------NAVIGATION BAR (COLLAPSIBLE)---------*/
 
 
 
 .col-md-3 {                                                                 /* 3 column skeleton of Navbar */
     height: 100%;
     background-color: #353541;
-    position: absolute;            /*Using Absolute positioning to make height working */
-
+    position: absolute;                                /*Using Absolute positioning to make height working */
 }
+
+
+.navbar-header {                                     /* Cancelling Float for both nav BUTTON and nav LIST */
+    float: none;
+}
+
+.navbar-nav li {
+    float: none;
+}
+
+
+
+/*--- Classes for profile section--- */
+
 
 .img-responsive {
     width: 100%;
@@ -73,17 +86,44 @@ table {
 }
 
 
-.nav-bar {                                                               /* NAVIGATION BAR of the template */
+
+/*--- Classes for NAVIGATION BAR---*/
+
+
+.navbar {
     background-color: #353541;
 }
 
-
-.nav-bar .nav-bar-list {
-    list-style-type: none;
-    border-top: 3px solid #22222f;
+.navbar-nav {
+    width: 100%;
 }
 
-.nav-bar-list .nav-bar-list-items {
+.navbar-default .navbar-nav li a {                                  /* COLOR of Navbar options */
+    color: white;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: white;
+}
+
+
+.navbar-default .navbar-brand {                                     /* COLOR of collapsible TEXT button of Navbar */
+    font-weight: bold;
+    color: white;
+    padding-left: 8%;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+
+
+.navbar-default {                                                   /* Zero out border color coming from Bootstrap */
+    border-color: transparent;
+}
+
+.nav-bar-list-items {
     border-bottom: 3px solid #22222f;
     padding: 22px 0 22px 11.11%;
 }
@@ -100,19 +140,10 @@ table {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 20px;
-    color: white;
     text-decoration: none;
 }
 
-/*
-.left-column-bottom {
-    background-color: #1e2e3e;
-    background-size: auto;
-    background-repeat: repeat-y;
-    height: 100%;
-}
 
-*/
 
 /* Removing spaces between major sides (3 columns, 9 columns) of the grid */
 
@@ -165,14 +196,14 @@ table {
     text-align: center;
     width: 545px;
     position: absolute;
-    margin: -40% 22%;
+    margin: -40% 20%;
 }
 
 .banner .banner-button {                                                  /* Button of the banner */
     background-color: #fb6470;
     border: none;
     border-radius: 5px;
-    width: 17.9%;
+    width: 19%;
     padding: 15px 4.2% 15px 4.2%;
     position: absolute;
     margin: -28% 41% 0 41%;
@@ -216,8 +247,8 @@ a.banner-button-link:hover {
 
 .portfolio-tabs li {
     display: inline-block;
-    margin-right: 16%;
-    margin-left: 2%;
+    margin-right: 11%;
+    margin-left: 4%;
 }
 
 .portfolio-tabs li:last-of-type {
@@ -369,7 +400,7 @@ a.banner-button-link:hover {
     background-color: #fb6470;
     border: none;
     padding: 3% 5%;
-    margin-left: 71%;
+    margin-left: 65%;
 }
 
 .form-button:active {
@@ -441,7 +472,7 @@ a.banner-button-link:hover {
 
 .footer-icons {                                            /* Icons for footer */
     margin: 0 auto;
-    width: 15%;
+    width: 17%;
     list-style-type: none;
 }
 
@@ -495,8 +526,8 @@ a.banner-button-link:hover {
 }
 
 .footer-copyright {                                      /* Copyright notice of Footer */
-    width: 30%;
-    margin: 0 auto;
+    width: 39%;
+    margin-left: 32.5%;
     margin-top: 2%;
     margin-bottom: 5%;
     font-family: 'Raleway', sans-serif;
@@ -506,12 +537,285 @@ a.banner-button-link:hover {
 }
 
 
-/* ------ Extra STYLES for screen widths less than 992 px ------ */
+
+/* ---------------------------------------- Minor STYLES for screen widths less than 1113 px ------------------------------ */
+
+
+@media (max-width: 1113px) {
+
+    .banner-title {                 /* Making banner HEADER to stay in the center */
+        font-size: 35px;
+    }
+
+    .banner-text {                  /* Making banner TEXT to stay in the center */
+        margin: -39% 10.5%;
+        width: 615px;
+    }
+}
+
+/* ---------------------------------------- Minor STYLES for screen widths less than 910 px --------------------------------- */
+
+@media (max-width: 910px) {
+    .banner .banner-text {
+        margin: -40% 18.5%;         /* Making banner TEXT to stay in the center */
+        width: 535px;
+    }
+}
+
+
+
+
+/* ----------------------------------------
+           Extra STYLES for screen widths less than 992 px
+               ---------------------------------------------------------- */
 
 
 @media (max-width: 992px) {
 
     .col-md-3 {
-        position: static;             /* Making positioning of Navbar column back to normal, for height purposes*/
+        position: static;               /* Making positioning of Navbar column back to normal, for height purposes*/
     }
+
+    .img-responsive {
+        width: 100%;
+    }
+
+    .col-md-9 {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .banner {                           /*  Making BANNER to extend left to right of screen */
+        margin: 0 -2.5% 0 -2.5%;
+    }
+
+    .banner-title {                    /* Making banner HEADER smaller and to stay in the center */
+        font-size: 35px;
+        margin: -58% 19.5%;
+    }
+
+    .banner-text {                     /* Making banner TEXT to stay in the center */
+        margin: -40% 22.5%;
+        width: 586px;
+    }
+
+    .banner .banner-button {           /* Making banner BUTTON to stay in the center */
+        margin: -28% 41% 0 45%;
+    }
+
+
+    .portfolio-title {                  /* Making PORTFOLIO HEADER to display smaller */
+        font-size: 30px;
+    }
+
+
+    .portfolio-project-1, .portfolio-project-2, .portfolio-project-3, .portfolio-project-4, .portfolio-project-5, .portfolio-project-6 {
+        width: 45%;
+        float: left;                          /* Making all portfolio projects to display side by side */
+        margin-right: 1%;
+        margin-left: 3.5%;
+    }
+
+    .portfolio-tabs li {                      /* Making all portfolio naming tabs to display in a single line */
+        margin-right: 15%;
+        margin-left: 2%;
+    }
+
+    .message-form {                           /* Making the FORM section width and margins smaller, adding float for side by side display with Contact section */
+        margin-top: 8%;
+        margin-left: 7%;
+        width: 35%;
+        float: left;
+    }
+
+    .form-header {                           /* Making form HEADER smaller */
+        font-size: 20px;
+    }
+
+    .form-button {                          /* Making the form BUTTON to display text in single line */
+        margin-left: 66%;
+    }
+
+
+    .contact {                             /* Making the CONTACT section margin lower for alignment with Form section*/
+        margin-top: 10%;
+    }
+
+
+    .col-sm-9 {                           /* Making 9 column display smaller to fit  the Contact elements */
+        width: 25%;
+    }
+
+
+    .contact span {                      /* Making Contact LOGOS to display further from their corresponding texts */
+        margin-left: 55%;
+    }
+
+    .footer-icons {                     /* Making the general footer ICONS width proper to maintain the icons in a single line */
+        width: 19%;
+    }
+
+    .footer-copyright {                 /* Making the COPYRIGHT notice to remain in a single line while centered in the page */
+        width: 45%;
+        margin-left: 33.5%;
+    }
+
+
+}
+
+
+/* ----------------------------------------
+           Extra STYLES for screen widths less than 768 px
+               ---------------------------------------------------------- */
+
+
+@media (max-width: 768px) {
+
+    .portfolio-title {                                   /* Making PORTFOLIO HEADER to display smaller */
+        font-size: 25px;
+    }
+
+    .banner-title {                                     /* Making banner HEADER smaller  */
+        font-size: 28px;
+    }
+
+    .banner .banner-text {                             /* Increasing banner text size by 2 pixel for visibility */
+        font-size: 16px;
+        margin: -40% 12.5%;
+        width: 535px;
+    }
+
+    .banner .banner-button {                          /* Increasing the width of the banner BUTTON and and the top margin */
+        width: 20%;
+        margin: -23% 41% 0 45%;
+    }
+
+    a.banner-button-link {                           /* Increasing the font size of banner BUTTON */
+        font-size: 17px;
+    }
+
+    .portfolio-project-1, .portfolio-project-2, .portfolio-project-3, .portfolio-project-4, .portfolio-project-5, .portfolio-project-6 {
+        width: 42%;
+        float: left;                                     /* Making all portfolio projects to display Side by Side */
+        margin-right: 1%;
+        margin-left: 6%;
+    }
+
+    .portfolio-tabs li {                                /* Making all portfolio naming TABS to display in a single line */
+        margin-right: 11.5%;
+        margin-left: 2%;
+    }
+
+    .caption-header {                                   /* Making all Project section HEADERS to display with less font-size */
+        font-size: 18px;
+    }
+
+    .caption-text {                                    /* Making all Project section TEXTS to display with less font-size */
+        font-size: 15px;
+    }
+
+    .button-label {                                      /* Making all Project BUTTONS to display with less font-size */
+        font-size: 13px;
+    }
+
+    .caption-button-link .glyphicon-menu-right {         /* Making all Project section button LOGOS to display smaller */
+        font-size: 70%;
+    }
+
+    .form-button {                                     /* Making the form BUTTON text to stay in a single line */
+        margin-left: 60%;
+    }
+
+    .footer-icons {                                    /* Increasing the width of footer ICONS to stay in a single line */
+        width: 21%;
+    }
+
+    .footer-copyright {                               /* Increasing the width of COPYRIGHT notice and center it */
+        width: 47%;
+        margin-left: 30%;
+    }
+
+}
+
+
+
+/* ----------------------------------------
+           Extra STYLES for screen widths less than 620 px
+               ---------------------------------------------------------- */
+
+@media (max-width: 620px) {
+
+    .banner-title {                               /* Decreasing the font size of banner HEADER */
+        font-size: 23px;
+    }
+
+    .banner .banner-text {                      /* Decreasing the width of banner TEXT to center it */
+        font-size: 16px;
+        margin: -40% 14%;
+        width: 430px;
+    }
+
+    .banner .banner-button-link {              /* Decreasing the font size of banner BUTTON */
+        font-size: 15px;
+    }
+
+    .banner .banner-button {                  /* Increasing the width of banner BUTTON */
+        width: 22%;
+    }
+
+    .portfolio-tabs li {                     /* Decreasing the margins of portfolio header TABS to fit in a single line */
+        margin-right: 7%;
+        margin-left: 2%;
+    }
+
+    .portfolio-project-1, .portfolio-project-2, .portfolio-project-3, .portfolio-project-4, .portfolio-project-5, .portfolio-project-6 {
+        width: 90%;
+        float: none;                        /* Removing FLOAT and increasing width for displaying 1 portfolio project per line */
+    }
+
+    .caption-header {                      /* Increasing the font-size of projects HEADERS */
+        font-size: 24px;
+    }
+
+    .caption-text {                        /* Increasing the font-size of projects TEXTS */
+        font-size: 16px;
+    }
+
+    .button-label {                       /* Increasing the font-size of projects BUTTON labels */
+        font-size: 16px;
+    }
+
+    .caption-button-link .glyphicon-menu-right {      /* Increasing the size for LOGO of projects Buttons */
+        font-size: 100%;
+    }
+
+    .message-form {
+        float: none;                     /* Removing the FLOAT for the form section to display in a single line */
+        width: 84%;
+        margin-top: 15%;
+    }
+
+    .form-button {                       /* Making the form BUTTON text to stay in a single line */
+        margin-left: 74%;
+    }
+
+    .col-sm-9 {                          /* Increasing the WIDTH of CONTACT section to fit in the whole screen */
+        width: 75%;
+    }
+
+    .contact {                         /* Increasing TOP and LEFT margins of CONTACT section */
+        margin-top: 15%;
+        margin-left: 8%;
+    }
+
+    .footer-icons {                   /* Increasing the width of footer ICONS to stay in a single line */
+        width: 25%;
+    }
+
+    .footer-copyright {              /* Increasing the width of COPYRIGHT notice and center it */
+        width: 56%;
+        margin-left: 26%;
+    }
+
 }

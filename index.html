@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>resume</title>
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/dist/js/bootstrap.min.js">
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway:500,600' rel='stylesheet' type='text/css'>
 </head>
@@ -14,24 +15,35 @@
     <div class="row">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-3">                                      <!-- 3 major left columns of the template-->
-                    <div class="profile">                                                 <!-- Profile section-->
-                        <img class="img-responsive" src="image/profile-image.png"/>
-                        <label class="profile-name">Al Rayhan</label>
-                        <label class="profile-expertise">UI/UX Expert</label>
-                    </div>
-                    <div class="nav-bar">                                                 <!--Navigation bar-->
-                        <ul class="nav-bar-list">
-                            <li class="nav-bar-list-items"><a class="items-link" href="">Home</a></li>
-                            <li class="nav-bar-list-items"><a class="items-link" href="">About Me</a></li>
-                            <li class="nav-bar-list-items"><a class="items-link" href="">Education</a></li>
-                            <li class="nav-bar-list-items"><a class="items-link" href="">Work Experience</a></li>
-                            <li class="nav-bar-list-items"><a class="items-link" href="">Skills</a></li>
-                            <li class="nav-bar-list-items"><a class="items-link" href="">Portfolio</a></li>
-                            <li class="nav-bar-list-items"><a class="items-link" href="">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <div class="left-column-bottom"></div>                          <!--lower part of the left columns-->
+                <div class="col-md-3">                                                 <!-- 3 major left columns of the template-->
+                    <nav class="navbar navbar-default navbar-static-top">
+                            <div class="navbar-header">                               <!-- BOOTSTRAP NAVIGATION BAR -->
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Explore us!</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+                                <div class="profile">                                                 <!-- Profile section-->
+                                    <img class="img-responsive" src="image/profile-image.png"/>
+                                    <label class="profile-name">Al Rayhan</label>
+                                    <label class="profile-expertise">UI/UX Expert</label>
+                                </div>
+                                <ul class="nav navbar-nav">                                           <!-- Navbar options -->
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">Home</a></li>
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">About Me</a></li>
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">Education</a></li>
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">Work Experience</a></li>
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">Skills</a></li>
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">Portfolio</a></li>
+                                    <li class="nav-bar-list-items"><a class="items-link" href="">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
                 <div class="col-md-9 col-md-offset-3">                                         <!-- 9 major right columns of the template-->
                     <div class="banner">                                                    <!-- Banner -->
